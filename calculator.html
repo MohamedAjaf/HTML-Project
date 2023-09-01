@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Calculator{
+            border: 2px solid greenyellow;
+            position: absolute;
+            padding: 5px;
+            width: 200px;
+            top: 30%;
+            left: 40%;
+        }
+        h1{
+            text-align: center;
+        }
+
+        #result{
+            margin-left: 10px;
+        }
+
+        button{
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Calculator">
+        <h1>Simple Calculator</h1>
+      
+        <input type="text" id="result"> <br><br>
+        
+        <button onclick="result.value=result.value+1">1</button>
+        <button onclick="result.value=result.value+2">2</button>
+        <button onclick="result.value=result.value+3">3</button>
+        <button onclick="result.value=result.value+'+'">+</button>
+        <br><br>
+        <button onclick="result.value=result.value+4">4</button>
+        <button onclick="result.value=result.value+5">5</button>
+        <button onclick="result.value=result.value+6">6</button>
+        <button onclick="result.value=result.value+'-'">-</button>
+        <br><br>
+        <button onclick="result.value=result.value+7">7</button>
+        <button onclick="result.value=result.value+8">8</button>
+        <button onclick="result.value=result.value+9">9</button>
+        <button onclick="result.value=result.value+'*'">*</button>
+        <br><br>
+        <button onclick="result.value=result.value+'/'">/</button>
+        <button onclick="result.value=result.value+'%'">%</button>
+        <button onclick="result.value=result.value+0">0</button>
+        <button onclick="result.value=eval(result.value)">=</button>
+        
+    </div>
+</body>
+</html>
