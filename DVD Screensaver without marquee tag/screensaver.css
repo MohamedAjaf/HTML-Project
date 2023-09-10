@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.circle{
+    height:100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    animation: screenjump 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes screenjump{
+0%{
+    left:45%;
+    top: 0px;
+    background-color: red;
+}
+
+25%{
+    background-color: blue;
+    left: 85%;
+    top:40%;
+}
+
+50%{
+    background-color: green;
+    left:45%;
+    top: 85%;
+}
+
+75%{
+    background-color: yellow;
+    left:0px;
+    top: 45%;
+}  
+
+100%{
+    background-color: red;
+    top:0px;
+    left:45%
+}
+}
